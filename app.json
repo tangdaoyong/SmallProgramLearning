@@ -9,5 +9,8 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "usingComponents": {
+    
+  },
   "sitemapLocation": "sitemap.json"
 }

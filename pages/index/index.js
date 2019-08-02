@@ -1,6 +1,10 @@
 //index.js
+import Dialog from '../../miniprogram_npm/vant-weapp/dialog/dialog';
+
 //获取应用实例
 const app = getApp()
+import util from '../../utils/util.js';
+// const util = require('../../utils/util.js');
 
 Page({
   data: {
@@ -11,6 +15,17 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
+    Dialog.alert({
+      title: '标题',
+      message: '弹窗内容'
+    }).then(() => {
+      // on close
+      var logs = (wx.getStorageSync('logs') || []).map(log => {
+        return util.formatTime(new Date(log))
+      })
+      console.log(logs)
+    });
+    return;
     wx.navigateTo({
       url: '../logs/logs'
     })
