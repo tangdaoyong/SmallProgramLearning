@@ -1,0 +1,22 @@
+{
+  "name": "smallprogramlearning",
+  "version": "1.0.0",
+  "description": "微信小程序学习",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangdaoyong/SmallProgramLearning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tangdaoyong/SmallProgramLearning/issues"
+  },
+  "homepage": "https://github.com/tangdaoyong/SmallProgramLearning#readme",
+  "dependencies": {
+    "vant-weapp": "^0.5.17"
+  }
+}
