@@ -1,0 +1,15 @@
+/* pages/login/login.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+.cell {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  border-radius: 10rpx;
+  border-color: blueviolet;
+}

@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+
+<van-row gutter="10" wx:for="{{datas}}" wx:key="*this">
+    <van-col class="cell" bindtap="cellTap" data-index="{{index}}" span="24">{{item}}</van-col>
+</van-row>
+
+<van-dialog id="van-dialog" />

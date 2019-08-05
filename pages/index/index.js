@@ -24,12 +24,21 @@ Page({
         return util.formatTime(new Date(log))
       })
       console.log(logs)
+      wx.navigateTo({
+        url: '../logs/logs'
+      })
     });
-    return;
-    wx.navigateTo({
-      url: '../logs/logs'
+  },
+
+  /*
+  * 点击文字跳转登录
+  */
+  gotoLogin:function() {
+    wx.reLaunch({
+      url: '../login/login',
     })
   },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
